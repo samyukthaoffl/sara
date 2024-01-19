@@ -1,0 +1,32 @@
+
+<html>
+<head></head>
+
+<label for="">IP Name </label>
+<select id="opt">
+            <option value="V G THOMAS">V G THOMAS</option>
+            <option value="D SRIDEVI">D SRIDEVI</option>
+            <option value="RAJESH THANGARAJ SIVAGAMI K">RAJESH THANGARAJ SIVAGAMI K</option>
+            <option value="PARAN JATAP">PARAN JATAP</option>
+        </select>
+<button type="button" onclick="select_opt()" >
+        Submit
+    </button>
+	<p id="get_p"></p> 
+        <script>
+             function select_opt(){
+		var x =document.getElementById('opt').selectedIndex;
+		     console.log(document.getElementsByTagName("option"));
+		var y =document.getElementsByTagName("option")[x].value;
+		     console.log(x+' '+y);
+
+            document.getElementById('get_p').
+            innerHTML = 'value select '+y;
+		}
+	</script>
+
+
+    
+
+</body>
+</html>
